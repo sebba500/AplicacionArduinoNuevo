@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Docente :" />
+
+                <Button
+                    android:id="@+id/abrirbtn"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/relativeLayout"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/boton_redondo_abrir"
+                    android:elevation="0dp"
+                    android:text="Abrir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textDocente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="45dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <RelativeLayout
+
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@+id/textDocente"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="51dp"
+                    android:background="@drawable/boton_redondo">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/relativeLayout"
+                    android:layout_alignTop="@+id/relativeLayout"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="11dp"
+                    android:clickable="false"
+                    android:text="Laboratorio 5"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/texView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/relativeLayout"
+                    android:layout_alignTop="@+id/abrirbtn"
+                    android:text="Abierto por ultima vez"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <TextView
+                    android:id="@+id/textUltimo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/abrirbtn"
+                    android:layout_alignStart="@+id/texView3"
+                    android:textColor="@android:color/background_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dip"
+                    android:layout_above="@+id/textView2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/linea_negra_redonda">
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dip">
+
+
+                <Button
+                    android:id="@+id/abrirbtn2"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/relativeLayout2"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/boton_redondo_abrir"
+                    android:elevation="0dp"
+                    android:enabled="false"
+                    android:text="Abrir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="51dp"
+                    android:background="@drawable/boton_redondo">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/relativeLayout2"
+                    android:layout_alignTop="@+id/relativeLayout2"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="11dp"
+                    android:clickable="false"
+                    android:text="Laboratorio Leica"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/texView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/relativeLayout2"
+                    android:layout_alignTop="@+id/abrirbtn2"
+                    android:text="Abierto por ultima vez"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <TextView
+                    android:id="@+id/textUltimo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/abrirbtn2"
+                    android:layout_alignStart="@+id/texView32"
+                    android:textColor="@android:color/background_dark" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dip"
+                android:layout_marginTop="20dip">
+
+
+                <Button
+                    android:id="@+id/abrirbtn3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/relativeLayout3"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/boton_redondo_abrir"
+                    android:elevation="0dp"
+                    android:enabled="false"
+                    android:text="Abrir"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="51dp"
+                    android:background="@drawable/boton_redondo">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/relativeLayout3"
+                    android:layout_alignTop="@+id/relativeLayout3"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="11dp"
+                    android:clickable="false"
+                    android:text="Bodega"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/texView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/relativeLayout3"
+                    android:layout_alignTop="@+id/abrirbtn3"
+                    android:text="Abierto por ultima vez"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <TextView
+                    android:id="@+id/textUltimo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/abrirbtn3"
+                    android:layout_alignStart="@+id/texView33"
+                    android:textColor="@android:color/background_dark" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

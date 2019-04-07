@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebastian.aplicacionarduinonuevo.MainActivity"
+    android:weightSum="1">
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="Nombre de usuario"
+        android:inputType="textCapSentences"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_marginTop="28dp"
+        />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondo"
+        android:text="Iniciar Sesion"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
